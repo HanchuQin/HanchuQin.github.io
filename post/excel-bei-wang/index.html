@@ -1,9 +1,11 @@
+
+<!DOCTYPE html>
 <html>
   <head>
     
 <meta charset="utf-8" >
 
-<title>秦汉楚</title>
+<title>Excel备忘 | 秦汉楚</title>
 <meta name="description" content="分享生活 =.=">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,6 +15,12 @@
 <link rel="shortcut icon" href="https://HanchuQin.github.io/favicon.ico?v=1555944439973">
 <link rel="stylesheet" href="https://HanchuQin.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -74,19 +82,51 @@
 </transition>
 
 
-        <div class="content-container">
+      <div class="content-container">
+        <div class="post-detail">
           
-          <div class="tags-container">
+          <h2 class="post-title">Excel备忘</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-04-22</span>
             
-              <a class="tag" href="https://HanchuQin.github.io/tag/VZFWXCoyX">备忘录</a>
-            
-              <a class="tag" href="https://HanchuQin.github.io/tag/XbWOX8G8b">生活经验</a>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://HanchuQin.github.io/tag/VZFWXCoyX">
+                    备忘录
+                    
+                  </a>
+                
+              </span>
             
           </div>
+          <div class="post-content">
+            <p>日期差异函数(Excel中的隐藏函数)
+datedif(开始时间,结束时间,&quot;y&quot;)</p>
 
+          </div>
         </div>
 
-        <div class="site-footer">
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://HanchuQin.github.io/post/zhuang-xiu-jing-yan">
+              <h3 class="post-title">
+                下一篇：装修经验
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
   <div class="slogan">分享生活 =.=</div>
   <div class="social-container">
     
@@ -117,8 +157,8 @@
 </div>
 
 
-      </div>
-      <script type="application/javascript">
+    </div>
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
 
@@ -132,8 +172,30 @@ var app = new Vue({
 </script>
 
 
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '758b03fb86fd91aa8e08',
+        clientSecret: '09266d3bc9fa611dbe83441f68a06ab33a5bb92c',
+        repo: 'HanchuQin.github.io',
+        owner: 'HanchuQin',
+        admin: ['HanchuQin'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
-    </div>
+
+
   </body>
 </html>
