@@ -1,107 +1,173 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+      
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>秦汉楚</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>装修经验 | 秦汉楚</title>
-<meta name="description" content="分享生活 =.=">
+<meta name="description" content="分享生活 =.="/>
+<meta name="keywords" content="分享生活 =.="/>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="https://HanchuQin.github.io/favicon.ico">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://HanchuQin.github.io/favicon.ico?v=1559910874061">
 <link rel="stylesheet" href="https://HanchuQin.github.io/styles/main.css">
 
+<!-- Modernizr JS -->
+<script src="https://HanchuQin.github.io/media/scripts/_vendors/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<scripts src="https://HanchuQin.github.io/media/scripts/_vendors/respond.min.js"></scripts>
+<![endif]-->
 
-  
-    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
-  
+<!-- Comment -->
 
-  
+    
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+    
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/tomorrow-night.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+<link crossorigin="anonymous" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" href="https://lib.baomitu.com/font-awesome/5.8.1/css/all.min.css" rel="stylesheet">
 
   </head>
   <body>
-    <div id="app" class="main">
+  
+<div id="fh5co-offcanvas">
+    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
+        <span><i class="icon-cross3"></i> <span>Close</span></span>
+    </a>
+    <div class="fh5co-bio">
+        <figure>
+            <img src="https://HanchuQin.github.io/media/images/avatar.png" alt="秦汉楚" class="img-responsive">
+        </figure>
+        <h3 class="heading">ABOUT ME</h3>
+        <h2>秦汉楚</h2>
+        <p>分享生活 =.=</p>
+        <ul class="fh5co-social">
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+                <li>
+                    
+                </li>
+            
+        </ul>
+    </div>
 
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://HanchuQin.github.io">
-        <img src="https://HanchuQin.github.io/images/avatar.png?v=1559910874061" class="site-logo">
-        <h1 class="site-title">秦汉楚</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+    <div class="fh5co-menu">
+        <div class="fh5co-box">
+            <h3 class="heading">搜索</h3>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="输入关键字">
+                </div>
+            </form>
+        </div>
+        <div class="fh5co-box">
+            <h3 class="heading">标签</h3>
+            <ul>
+                
+                    <li><a href="https://HanchuQin.github.io/tag/wK3TFymB1">小说</a></li>
+                
+                    <li><a href="https://HanchuQin.github.io/tag/VZFWXCoyX">备忘录</a></li>
+                
+                    <li><a href="https://HanchuQin.github.io/tag/XbWOX8G8b">生活经验</a></li>
+                
+            </ul>
+        </div>
     </div>
-    <div>
-      
-        
-          <a href="https://HanchuQin.github.io" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            文章
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      分享生活 =.=
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-    </div>
-  </div>
 </div>
 
+<header id="fh5co-header">
+    <div class="container-fluid">
+        <div class="row">
+            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+            <ul class="fh5co-social">
+                
+                    <li>
+                        <a href="https://HanchuQin.github.io"
+                         >
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives"
+                         >
+                            文章
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags"
+                         >
+                            标签
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/post/about"
+                         >
+                            关于
+                        </a>
+                    </li>
+                
+            </ul>
+            <div class="col-lg-12 col-md-12 text-center">
+                <h1 id="fh5co-logo">
+                    <a href="https://HanchuQin.github.io">秦汉楚</a>
+                </h1>
+            </div>
+        </div>
+    </div>
+</header>
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">装修经验</h2>
-            <div class="post-date">2019-04-20</div>
-            
-            <div class="post-content">
-              <h3 id="装修公司选择"><strong>装修公司选择</strong></h3>
+
+<!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
+<!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
+
+  <div class="container-fluid">
+      <div class="row fh5co-post-entry single-entry">
+          <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+              <figure class="animate-box">
+                  
+              </figure>
+              <span class="fh5co-meta animate-box">
+                  
+                      <div class="tag-container">
+                          
+                              <a href="https://HanchuQin.github.io/tag/XbWOX8G8b" class="tag">生活经验, </a>
+                          
+                      </div>
+                  
+              </span>
+              <h2 class="fh5co-article-title animate-box">装修经验</h2>
+              <span class="fh5co-meta fh5co-date animate-box">2019-04-20</span>
+
+              <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
+                  <div class="row">
+                      <div class="col-md-12 animate-box post-content">
+                          <p> <h3 id="装修公司选择"><strong>装修公司选择</strong></h3>
 <p>应当选择有实力的大公司,并且选定主材时品牌以上过央视广告的商家为佳,并且在选定签过合同后如果更换商家,需选择达到同类品质的商家,否则应当强硬的要求维权.</p>
 <h3 id="电路"><strong>电路</strong></h3>
 <h4 id="强电">强电</h4>
@@ -130,72 +196,79 @@
 <h3 id="柜子"><strong>柜子</strong></h3>
 <p>衣柜:时尚感需要可以选择去宜家进行定制或采购成品,宜家中等价格与索菲亚差不多,但要时尚一些,设计理念新颖一些.<br>
 橱柜:可以选择欧派,价格亲民,板材适度.</p>
+ </p>
+                      </div>
+                  </div>
 
-            </div>
-            
-              <div class="tag-container">
-                
-                  <a href="https://HanchuQin.github.io/tag/XbWOX8G8b" class="tag">
-                    生活经验
-                  </a>
-                
+                  <div class="row">
+                      <div class="col-md-12 animate-box">
+                          
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-12 animate-box">
+                          
+                              
+                                  <div id="gitalk-container"></div>
+                              
+
+                              
+                          
+                      </div>
+                  </div>
               </div>
-            
-            
 
-            
-              
-                <div id="gitalk-container" data-aos="fade-in"></div>
-              
-
-              
-            
-
-          </div>
-
-        </div>
+          </article>
       </div>
-    </div>
+  </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+<footer id="fh5co-footer">
+  <p>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
+</footer>
+
+
+    
+<!-- jQuery -->
+<script src="https://HanchuQin.github.io/media/scripts/_vendors/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="https://HanchuQin.github.io/media/scripts/_vendors/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="https://HanchuQin.github.io/media/scripts/_vendors/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="https://HanchuQin.github.io/media/scripts/_vendors/jquery.waypoints.min.js"></script>
+<!-- Main JS -->
+<script src="https://HanchuQin.github.io/media/scripts/_vendors/main.js"></script>
+<!-- Md5 Min JS -->
+<script src="https://HanchuQin.github.io/media/scripts/_vendors/md5.min.js"></script>
 
 <script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
-
+    hljs.initHighlightingOnLoad();
 </script>
 
 
-  
-  
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
 
-      var gitalk = new Gitalk({
-        clientID: '758b03fb86fd91aa8e08',
-        clientSecret: '09266d3bc9fa611dbe83441f68a06ab33a5bb92c',
-        repo: 'HanchuQin.github.io',
-        owner: 'HanchuQin',
-        admin: ['HanchuQin'],
-        id: location.pathname,      // Ensure uniqueness and length less than 50
-        distractionFreeMode: false  // Facebook-like distraction free mode
-      })
+    
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
 
-      gitalk.render('gitalk-container')
+            var gitalk = new Gitalk({
+                clientID: '758b03fb86fd91aa8e08',
+                clientSecret: '09266d3bc9fa611dbe83441f68a06ab33a5bb92c',
+                repo: 'HanchuQin.github.io',
+                owner: 'HanchuQin',
+                admin: ['HanchuQin'],
+                id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+                distractionFreeMode: false  // Facebook-like distraction free mode
+            })
 
-    </script>
-  
+            gitalk.render('gitalk-container')
 
-  
+        </script>
+    
+
+    
 
 
 
